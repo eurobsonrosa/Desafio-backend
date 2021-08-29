@@ -16,6 +16,6 @@ app.use(express.json());
 app.use(express.static(__dirname + '/docs'));
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
-app.listen('3000', () => {
-    console.log('rodando na porta 3000.');
+app.listen(process.ev.PORT || '3000', () => {
+    console.log('Servidor on.');
 });
