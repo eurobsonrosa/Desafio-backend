@@ -1,0 +1,119 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API do Projeto Gama XP",
+      "description": "Projeto final Gama XP 2021",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:3000",
+        "description": "Ambiente de Desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/registro": {
+        "post": {
+          "summary": "Cadastro de Candidato",
+          "description": "Cadastro de candidatos, recebe dados pessoais e documentos",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                        "type": "string"
+                    },
+                    "cargo": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "civil": {
+                        "type": "string"
+                    },
+                    "genero": {
+                        "type": "string"
+                    },
+                    "cep": {
+                        "type": "number"
+                    },
+                    "logradouro": {
+                        "type": "string"
+                    },
+                    "complemento": {
+                        "type": "string"
+                    },
+                    "bairro": {
+                        "type": "string"
+                    },
+                    "cidade": {
+                        "type": "string"
+                    },
+                    "uf": {
+                        "type": "string"
+                    },
+                    "telefone": {
+                        "type": "string"
+                    },
+                    "celular": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "identidade": {
+                        "type": "number"
+                    },
+                    "orgao": {
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "number"
+                    },
+                    "veiculo": {
+                        "type": "string"
+                    },
+                    "cnh": {
+                        "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "Cadastro": {
+                    "value": {
+                        "nome": "Marianna Bastos",
+                        "cargo": "Fullstack Dev",
+                        "data": "01/01/1979",
+                        "civil": "Solteiro(a)",
+                        "genero": "Feminino",
+                        "cep": "70150900",
+                        "logradouro": "Praça dos Três Poderes",
+                        "complemento": "0",
+                        "bairro": "Zona Cívico-Administrativa",
+                        "cidade": "Brasília",
+                        "uf": "DF",
+                        "telefone": "(99) 3999-9999",
+                        "celular": "(99) 9999-9999",
+                        "email": "exemplo@exemplo.com",
+                        "identidade": "01234567",
+                        "orgao": "Polícia Civil",
+                        "cpf": "12345678910",
+                        "veiculo": "Sim",
+                        "cnh": "A"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
